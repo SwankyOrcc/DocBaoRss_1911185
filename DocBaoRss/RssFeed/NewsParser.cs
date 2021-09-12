@@ -12,7 +12,7 @@ namespace DocBaoRss.RssFeed
 		public List<Article> ParseXml(string xmlContent)
 		{
 			var document = new XmlDocument();
-			document.LoadXml(xmlContent);
+			document.LoadXml(xmlContent); 
 			var articles = new List<Article>();
 			var itemNodes = document.SelectNodes("//item");
 			foreach(XmlNode node in itemNodes)
